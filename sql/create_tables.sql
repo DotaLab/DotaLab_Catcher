@@ -1,3 +1,11 @@
+CREATE TABLE IF NOT EXISTS users (
+  user_id bigint PRIMARY KEY,
+  username text UNIQUE,
+  password text,
+  steam_id text,
+  account_id text
+);
+
 CREATE TABLE IF NOT EXISTS heroes_matchups (
   PRIMARY KEY(hero, hero_id),
   hero bigint,
